@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Killer.MainPage"
+             BackgroundColor="#333333">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+            <Button 
+            x:Name="ConnectBtn" 
+            Text="Connect to computer"
+            AutomationProperties.HelpText="Allows to remotely connect to the computer"
+            Clicked="OnConnectClicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            WidthRequest="200"
+            HeightRequest="100"
+            BackgroundColor="Green"
+            TextColor="White"/>
+
+            <Button
+            x:Name="CounterBtn"
+            Text="Turn off computer"
+            SemanticProperties.Hint="Turns off the computer"
+            Clicked="OnTurnOffClicked"
+            HorizontalOptions="Center"
+            WidthRequest="200"
+            HeightRequest="100"
+            BackgroundColor="Red"
+            TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
